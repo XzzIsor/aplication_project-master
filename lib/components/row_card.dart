@@ -53,6 +53,7 @@ class RowCard extends StatelessWidget {
       ),
       elevation: 15.0,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0)),
+      margin: EdgeInsets.only(bottom: 412.0, top: 5.0, left: 5.0, right: 5.0),
     );
   }
 }
