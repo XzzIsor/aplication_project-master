@@ -12,7 +12,7 @@ class RowCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
+    return Container(
       child: ListBody(
         mainAxis: Axis.horizontal,
         children: [
@@ -30,7 +30,15 @@ class RowCard extends StatelessWidget {
               color: Colors.deepPurpleAccent, 
               borderRadius: BorderRadius.vertical(
                 top: Radius.circular(25.0),
-              )
+              ),
+               boxShadow: [
+                 BoxShadow(
+                   color: Colors.grey.withOpacity(0.5),
+                   blurRadius: 7.0,
+                   spreadRadius: 2.0,
+                   offset: Offset(2, 8),
+                 )
+               ]
             ),
             ),
            Container(
@@ -42,7 +50,15 @@ class RowCard extends StatelessWidget {
                ),
                borderRadius: BorderRadius.vertical(
                  bottom: Radius.circular(25.0),
-               )
+               ),
+               boxShadow: [
+                 BoxShadow(
+                   color: Colors.grey.withOpacity(0.5),
+                   blurRadius: 7.0,
+                   spreadRadius: 3.0,
+                   offset: Offset(0, 5),
+                 )
+               ]
              ),
              width: 250.0,
              height: 176.0,
@@ -51,9 +67,7 @@ class RowCard extends StatelessWidget {
           )
         ],
       ),
-      elevation: 15.0,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0)),
-      margin: EdgeInsets.only(bottom: 412.0, top: 5.0, left: 5.0, right: 5.0),
+      margin: EdgeInsets.only(top: 5.0, left: 5.0, right: 5.0),
     );
   }
 }
