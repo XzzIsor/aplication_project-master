@@ -18,11 +18,11 @@ class HomePage extends StatelessWidget {
             child: ListView(
               scrollDirection: Axis.horizontal, 
               children: [
-              RowCard('Titulo1', 'Subtitulo1', Icons.ac_unit,'assets/images/chiguiro.jpg'),
-              RowCard('Titulo2', 'Subtitulo2', Icons.access_alarms,'assets/images/Agua.jpg'),
-              RowCard('Titulo3', 'Subtitulo3', Icons.accessible_forward,'assets/images/Agua 2.jpg'),
-              RowCard('Titulo4', 'Subtitulo4', Icons.add_a_photo,'assets/images/Paisaje.jpg'),
-              RowCard('Titulo5', 'Subtitulo5', Icons.access_alarms_rounded,'assets/images/Paisaje2.jpg'),
+              RowCard('Titulo1', 'Subtitulo1', Icons.ac_unit,'assets/images/chiguiro.jpg', 'chiguiro'),
+              RowCard('Titulo2', 'Subtitulo2', Icons.access_alarms,'assets/images/Agua.jpg', 'no se'),
+              RowCard('Titulo3', 'Subtitulo3', Icons.accessible_forward,'assets/images/Agua 2.jpg', 'chiguiro'),
+              RowCard('Titulo4', 'Subtitulo4', Icons.add_a_photo,'assets/images/Paisaje.jpg','chiguiro'),
+              RowCard('Titulo5', 'Subtitulo5', Icons.access_alarms_rounded,'assets/images/Paisaje2.jpg','chiguiro'),
               ]
             ),
           ),
@@ -34,9 +34,12 @@ class HomePage extends StatelessWidget {
               fadeOutDuration: Duration(seconds: 1),
               fadeInCurve: Curves.easeIn,
             ),
-          )
+          ),
         ],
+        
       ),
+
+      
     );
   }
 }
