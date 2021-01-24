@@ -17,7 +17,12 @@ class ChiguiroPage extends StatelessWidget {
         ],
       ),
 
-      body: Text('Pendiente hacer algo aqui'),
+      body: TextField(
+        decoration: InputDecoration(
+          counterText: 'No sé', 
+          hintText: 'No sé'
+        ),
+      )
     );
   }
 }
